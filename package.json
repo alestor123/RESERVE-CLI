@@ -17,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/alestor123/RESERVE-CLI/issues"
   },
-  "homepage": "https://github.com/alestor123/RESERVE-CLI#readme"
+  "homepage": "https://github.com/alestor123/RESERVE-CLI#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "conf": "^7.1.2",
+    "minimist": "^1.2.5",
+    "npm-registry-client": "^8.6.0",
+    "tmp": "^0.2.1"
+  }
 }
