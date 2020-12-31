@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 
+
 var path = require('path'),
 fs = require('fs'),
 { exec } = require('child_process'),
 tmp = require('tmp'),
+chalk = require('chalk'),
 options = require('minimist')(process.argv.slice(2)),
 name = options.name || options.n;
 
@@ -23,5 +25,7 @@ if(err) throw err
 fs.writeFile(path + "/package.json",JSON.stringify(pckW),(err) => {if(err) throw err})
 fs.writeFile(path + "/README.md",readme,(err) => {if(err) throw err})
 exec(`npm publish ${path}`,(err,stdout) => { if(err) throw err
-console.log(stdout)})})
+console.log(stdout)
+console.log(chalk.green('Reserved'))
+})})
     
