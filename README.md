@@ -1,7 +1,7 @@
 # RESERVE-CLI
 >This is a simple code for reserving package name in npm (Dont Use It Only For Demo)
 
-Quick use 
+# Quick use 
 ``npx reserve-cli <name>``
 
 # Installation
